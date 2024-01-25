@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// import Counter from "./features/counter/Counter";
+import AddPostForm from "./features/posts/AddPostForm";
+import PostsList from "./features/posts/postList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className=" h-screen w-full flex items-center flex-col bg-slate-800 text-white py-10">
+      {/* <Counter /> */}
+      <AddPostForm />
+      <PostsList />
+    </main>
   );
 }
 
